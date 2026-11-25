@@ -35,6 +35,12 @@ public class Main {
         System.out.print("Enter seat number (1-6): ");
         int seat = Integer.parseInt(scanner.nextLine().trim());
 
+        if (row < 1 || row > seats.length ||
+                seat < 1 || seat > seats[0].length) {
+
+            System.out.println("Invalid Seat.");
+            return;
+        }
         row--;
         seat--;
 
@@ -55,6 +61,12 @@ public class Main {
         System.out.print("Enter seat number (1-6): ");
         int seat = Integer.parseInt(scanner.nextLine().trim());
 
+        if (row < 1 || row > seats.length ||
+                seat < 1 || seat > seats[0].length) {
+
+            System.out.println("Invalid Seat.");
+            return;
+        }
         row--;
         seat--;
 
